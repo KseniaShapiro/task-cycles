@@ -38,7 +38,7 @@ export function symbolsReplace(message) {
     do {
       if(start + 1 % 3 == 0) {
       answer += "_";
-      } else {answer += message[i]}
+      } else {answer += message[start]}
       start++;
     } while (start <= message.length);
     return answer;
