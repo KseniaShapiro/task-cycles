@@ -34,10 +34,13 @@ export function symbolsReplace(message) {
   if (message.length < 3) return message;
   else {
     let start = 2;
+    let answer = "";
     do {
-      message[start] = '_';
-      start+=3;
-    } while (start <= message.length());
-    return message;
+      if(start + 1 % 3 == 0) {
+      answer += "_";
+      } else {anser += message[i]}
+      start++;
+    } while (start <= message.length);
+    return answer;
   }
 }
