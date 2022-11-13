@@ -33,10 +33,10 @@ export function iterationCount(a) {
 export function symbolsReplace(message) {
   if (message.length < 3) return message;
   else {
-    let start = 2;
+    let start = 0;
     let answer = "";
     do {
-      if(start + 1 % 3 == 0) {
+      if((start + 1) % 3 == 0) {
       answer += "_";
       } else {answer += message[start]}
       start++;
