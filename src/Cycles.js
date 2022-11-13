@@ -35,7 +35,7 @@ export function symbolsReplace(message) {
   else {
     let start = 2;
     do {
-      message = message.replaceAt(start, '_');
+      message[start] = '_';
       start+=3;
     } while (start <= message.length());
     return message;
